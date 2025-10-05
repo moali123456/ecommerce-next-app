@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "Hello world!",
+    "popular-categories": "Popular Categories"
+  },
+  "AboutPage": {
+    "title": "about page"
+  },
+  "popular-categories": "Popular Categories",
+  "popular-products": "Popular Products",
+  "view-all": "View All",
+  "sale": "Sale",
+  "hot-deals": "Hot Deals",
+  "best-sale": "Best sale",
+  "best-sale-text": "Free on all your order, Free Shipping and  30 days money-back guarantee",
+  "client-comments": "Client Comments"
+}

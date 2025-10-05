@@ -1,0 +1,17 @@
+{
+  "HomePage": {
+    "title": "مرحبا بك",
+    "popular-categories": "الفئات المفضلة"
+  },
+  "AboutPage": {
+    "title": "صفحة من نحن"
+  },
+  "popular-categories": "الفئات المفضلة",
+  "popular-products": "المنتجات المفضلة",
+  "view-all": "عرض الكل",
+  "sale": "تخفيض",
+  "hot-deals": "افضل الصفقات",
+  "best-sale": "افضل العروض",
+  "best-sale-text": "مجانًا على جميع طلباتك، وشحن مجاني، وضمان استرداد الأموال خلال 30 يومًا",
+  "client-comments": "تعليقات العملاء"
+}
