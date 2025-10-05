@@ -46,6 +46,9 @@ const Images = {
   furnitureImage1: new URL("./products/furniture.png", import.meta.url).href,
   furnitureImage2: new URL("./products/furniture2.png", import.meta.url).href,
   fragrancesImage1: new URL("./products/fragrances1.png", import.meta.url).href,
+
+  // Public images
+  commentIcon: new URL("./comment-icon.svg", import.meta.url).href,
 };
 
 export default Images;
