@@ -8,6 +8,7 @@ import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "../_components/theme-provider/theme-provider";
 import { ThemeToggle } from "../_components/theme-toggle/theme-toggle";
 import LoaderHandler from "../_components/loaders/loader-handler";
+import MainFooter from "../_components/main-footer/main-footer";
 import "@smastrom/react-rating/style.css";
 import "./../globals.css";
 
@@ -54,6 +55,9 @@ export default async function LocaleLayout({ children, params: { locale } }) {
               <ThemeToggle />
             </div>
             {children}
+
+            {/* footer */}
+            <MainFooter />
           </NextIntlClientProvider>
         </ThemeProvider>
       </body>

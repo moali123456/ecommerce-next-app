@@ -25,7 +25,7 @@ function CommentsContent({ commentsData }) {
   const isRTL = locale === "ar";
 
   return (
-    <div className="container_bx bg-[#F2F2F2] py-8">
+    <div className="container_bx bg-[#F2F2F2] py-10 comments-section">
       <div className="mb-5 flex gap-2 justify-between items-end">
         <h1 className="text-2xl font-semibold dark:font-medium text-gray-900 dark:text-gray-200">
           {t("client-comments")}
@@ -70,7 +70,7 @@ function CommentsContent({ commentsData }) {
                             <h1 className="text-gray-900 text-sm font-bold capitalize">
                               {comment?.user?.fullName}
                             </h1>
-                            <h3 className="text-xs text-gray-400">title</h3>
+                            <h3 className="text-xs text-gray-400">{t("customer")}</h3>
                           </div>
                         </div>
 
@@ -90,10 +90,9 @@ function CommentsContent({ commentsData }) {
             <p className="text-gray-500">No products available.</p>
           )}
         </CarouselContent>
-        <CarouselPrevious />
-        <CarouselNext />
+        <CarouselPrevious className="cursor-pointer top-[-25px] start-[calc(100%-70px)]" />
+        <CarouselNext className="cursor-pointer top-[-25px] end-0 bg-[#00B207] hover:bg-[#008905] text-white hover:!text-white" />
       </Carousel>
     </div>
   );
 }
-

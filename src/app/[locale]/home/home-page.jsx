@@ -6,6 +6,8 @@ import DealsSection from "./deals-section";
 import HotDealsSection from "./hot-deals-section";
 import BannerSection from "./banner-section";
 import CommentsSection from "./comments-section";
+import SubcribeSection from "./subcribe-section";
+import "./home-page.scss";
 
 export default async function HomePage() {
   // Fetch Categories
@@ -36,6 +38,9 @@ export default async function HomePage() {
 
       {/* Comments section */}
       <CommentsSection />
+
+      {/* Subcribe section */}
+      <SubcribeSection />
     </div>
   );
 }
