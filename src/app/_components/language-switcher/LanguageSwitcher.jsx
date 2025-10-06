@@ -44,7 +44,7 @@ import { useTransition } from "react";
 import Images from "../../../../public/assets/images/images";
 import Image from "next/image";
 
-const LanguageSwitcher = ({ currentLocale }) => {
+const LanguageSwitcher = ({ currentLocale, className, imgStyle }) => {
   const router = useRouter();
   const pathname = usePathname();
   const [isPending, startTransition] = useTransition();
@@ -73,14 +73,16 @@ const LanguageSwitcher = ({ currentLocale }) => {
     <button
       onClick={handleSwitch}
       disabled={isPending}
-      className="cursor-pointer rounded"
+      //className="cursor-pointer rounded"
+      className={className}
     >
-      <Image
+      <img
         src={icon}
         alt="Switch Language Icon"
-        width={40}
-        height={40}
-        className="!h-auto"
+        //width={40}
+        //height={40}
+        //className="!h-auto"
+        className={imgStyle}
       />
     </button>
   );

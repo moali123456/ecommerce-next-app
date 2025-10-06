@@ -38,7 +38,7 @@ function SubcribeContent() {
           </div>
         </div>
 
-        <div className="flex items-center gap-4 w-1/3">
+        <div className="flex items-center gap-4 w-1/2">
           <InputGroup className="rounded-full">
             <InputGroupInput placeholder={t("your-email-address")} />
             <InputGroupAddon align="inline-end" className="p-0 !mr-0">

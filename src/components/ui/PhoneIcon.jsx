@@ -9,7 +9,7 @@ import {
   useEffect,
 } from "react";
 
-const InstagramIcon = forwardRef(
+const PhoneIcon = forwardRef(
   ({ onMouseEnter, onMouseLeave, className, size = 28, ...props }, ref) => {
     const controls = useAnimation();
     const reduced = useReducedMotion();
@@ -40,68 +40,42 @@ const InstagramIcon = forwardRef(
       };
     });
 
-    // const handleEnter = useCallback(
-    //   (e) => {
+    // const handleEnter = useCallback((e) => {
     //     if (reduced) return;
     //     if (!isControlled.current) controls.start("animate");
     //     else onMouseEnter?.(e);
-    //   },
-    //   [controls, reduced, onMouseEnter]
-    // );
+    // }, [controls, reduced, onMouseEnter]);
 
-    // const handleLeave = useCallback(
-    //   (e) => {
+    // const handleLeave = useCallback((e) => {
     //     if (!isControlled.current) controls.start("normal");
     //     else onMouseLeave?.(e);
-    //   },
-    //   [controls, onMouseLeave]
-    // );
+    // }, [controls, onMouseLeave]);
 
-    const iconVariants = {
-      normal: { scale: 1, rotate: 0 },
+    const waveGroup = {
+      normal: { rotate: 0, scale: 1 },
       animate: {
-        scale: [1, 1.08, 0.95, 1],
-        rotate: [0, -2, 2, 0],
+        rotate: [0, -3, 3, -2, 2, 0],
+        scale: [1, 1.02, 1, 1.015, 1],
+        transition: {
+          duration: 1.9,
+          repeat: Infinity,
+          repeatType: "loop",
+          repeatDelay: 0.9,
+          ease: "easeInOut",
+        },
+      },
+    };
+
+    const drawAndGlow = {
+      normal: { strokeDashoffset: 0, opacity: 1 },
+      animate: {
+        strokeDashoffset: [110, 0],
+        opacity: [0.55, 1, 0.9, 1],
         transition: {
           duration: 1.3,
-          ease: "easeInOut",
           repeat: Infinity,
           repeatType: "loop",
-          repeatDelay: 0.5,
-          ease: "easeInOut",
-        },
-      },
-    };
-
-    const drawVariants = {
-      normal: { pathLength: 1, opacity: 1 },
-      animate: {
-        pathLength: [0, 1],
-        opacity: [0.7, 1],
-        transition: {
-          duration: 1.5,
-          ease: "easeInOut",
-          repeat: 0,
-          repeat: Infinity,
-          repeatType: "loop",
-          repeatDelay: 0.5,
-          ease: "easeInOut",
-        },
-      },
-    };
-
-    const pulseVariants = {
-      normal: { scale: 1, opacity: 1 },
-      animate: {
-        scale: [1, 1.4, 1],
-        opacity: [1, 0.4, 1],
-        transition: {
-          duration: 1,
-          repeat: 0,
-          ease: "easeInOut",
-          repeat: Infinity,
-          repeatType: "loop",
-          repeatDelay: 0.5,
+          repeatDelay: 0.9,
           ease: "easeInOut",
         },
       },
@@ -124,35 +98,23 @@ const InstagramIcon = forwardRef(
           strokeWidth="2"
           strokeLinecap="round"
           strokeLinejoin="round"
-          animate={controls}
-          initial="normal"
-          variants={iconVariants}
+          className="lucide lucide-phone-icon lucide-phone"
         >
-          <motion.rect
-            width="20"
-            height="20"
-            x="2"
-            y="2"
-            rx="5"
-            ry="5"
-            variants={drawVariants}
-          />
-          <motion.path
-            d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"
-            variants={drawVariants}
-          />
-          <motion.line
-            x1="17.5"
-            x2="17.51"
-            y1="6.5"
-            y2="6.5"
-            variants={pulseVariants}
-          />
+          <motion.g variants={waveGroup} initial="normal" animate={controls}>
+            <motion.path
+              d="M13.832 16.568a1 1 0 0 0 1.213-.303l.355-.465A2 2 0 0 1 17 15h3a2 2 0 0 1 2 2v3a2 2 0 0 1-2 2A18 18 0 0 1 2 4a2 2 0 0 1 2-2h3a2 2 0 0 1 2 2v3a2 2 0 0 1-.8 1.6l-.468.351a1 1 0 0 0-.292 1.233 14 14 0 0 0 6.392 6.384"
+              strokeDasharray="110"
+              strokeDashoffset="110"
+              variants={drawAndGlow}
+              initial="normal"
+              animate={controls}
+            />
+          </motion.g>
         </motion.svg>
       </motion.div>
     );
   }
 );
 
-InstagramIcon.displayName = "InstagramIcon";
-export { InstagramIcon };
+PhoneIcon.displayName = "PhoneIcon";
+export { PhoneIcon };

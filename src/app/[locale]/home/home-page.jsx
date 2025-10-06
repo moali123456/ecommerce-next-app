@@ -14,7 +14,7 @@ export default async function HomePage() {
   const productsData = await getProducts();
 
   return (
-    <div id="home-page">
+    <div id="home-page" className="pt-4">
       {/* Categories section */}
       <div className="container_bx">
         <CategoriesSection />
