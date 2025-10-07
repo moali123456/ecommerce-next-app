@@ -2,8 +2,6 @@ import { NextIntlClientProvider } from "next-intl";
 import { getMessages } from "next-intl/server";
 import { notFound } from "next/navigation";
 import { routing } from "@/i18n/routing";
-import Link from "next/link";
-import { Button } from "@/components/ui/button";
 import { ThemeProvider } from "../_components/theme-provider/theme-provider";
 import LoaderHandler from "../_components/loaders/loader-handler";
 import MainFooter from "../_components/main-footer/main-footer";

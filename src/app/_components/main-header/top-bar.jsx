@@ -26,11 +26,11 @@ function PageContent() {
           <PhoneIcon className="size-[15px] text-gray-600" />
           <span className="text-xs text-gray-600">02123456789</span>
           <span className="text-gray-600">|</span>
-          <Link href="/" className="text-gray-600 text-sm">
+          <Link href="/" className="text-gray-600 text-xs">
             {t("login")}
           </Link>
           <span className="text-gray-600">|</span>
-          <Link href="/" className="text-gray-600 text-sm">
+          <Link href="/" className="text-gray-600 text-xs">
             {t("signup")}
           </Link>
         </div>
