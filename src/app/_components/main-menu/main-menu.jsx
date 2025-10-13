@@ -437,7 +437,7 @@ const navigation = {
     },
   ],
   pages: [
-    { name: "Company", href: "#" },
+    { name: "About", href: "/about" },
     { name: "Stores", href: "#" },
   ],
 };
