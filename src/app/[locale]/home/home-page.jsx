@@ -1,5 +1,6 @@
 import React from "react";
 import { getProducts } from "@/lib/actions/products/products-actions";
+import HeroSection from "./hero-section";
 import CategoriesSection from "./categories-section";
 import PopularProductSection from "./popular-product-section";
 import DealsSection from "./deals-section";
@@ -15,6 +16,11 @@ export default async function HomePage() {
 
   return (
     <div id="home-page" className="pt-4">
+      {/* Hero section */}
+      <div className="container_bx">
+        <HeroSection />
+      </div>
+
       {/* Categories section */}
       <div className="container_bx">
         <CategoriesSection />

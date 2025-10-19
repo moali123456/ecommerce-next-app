@@ -31,37 +31,37 @@
 //   {
 //     name: "Analytics",
 //     description: "Get a better understanding of your traffic",
-//     href: "#",
+//     href: "/",
 //     icon: ChartPieIcon,
 //   },
 //   {
 //     name: "Engagement",
 //     description: "Speak directly to your customers",
-//     href: "#",
+//     href: "/",
 //     icon: CursorArrowRaysIcon,
 //   },
 //   {
 //     name: "Security",
 //     description: "Your customers’ data will be safe and secure",
-//     href: "#",
+//     href: "/",
 //     icon: FingerPrintIcon,
 //   },
 //   {
 //     name: "Integrations",
 //     description: "Connect with third-party tools",
-//     href: "#",
+//     href: "/",
 //     icon: SquaresPlusIcon,
 //   },
 //   {
 //     name: "Automations",
 //     description: "Build strategic funnels that will convert",
-//     href: "#",
+//     href: "/",
 //     icon: ArrowPathIcon,
 //   },
 // ];
 // const callsToAction = [
-//   { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-//   { name: "Contact sales", href: "#", icon: PhoneIcon },
+//   { name: "Watch demo", href: "/", icon: PlayCircleIcon },
+//   { name: "Contact sales", href: "/", icon: PhoneIcon },
 // ];
 
 // export default function MainMenu() {
@@ -285,38 +285,38 @@ const products = [
   {
     name: "Analytics",
     description: "Get a better understanding of your traffic",
-    href: "#",
+    href: "/",
     icon: ChartPieIcon,
   },
   {
     name: "Engagement",
     description: "Speak directly to your customers",
-    href: "#",
+    href: "/",
     icon: CursorArrowRaysIcon,
   },
   {
     name: "Security",
     description: "Your customers’ data will be safe and secure",
-    href: "#",
+    href: "/",
     icon: FingerPrintIcon,
   },
   {
     name: "Integrations",
     description: "Connect with third-party tools",
-    href: "#",
+    href: "/",
     icon: SquaresPlusIcon,
   },
   {
     name: "Automations",
     description: "Build strategic funnels that will convert",
-    href: "#",
+    href: "/",
     icon: ArrowPathIcon,
   },
 ];
 
 const callsToAction = [
-  { name: "Watch demo", href: "#", icon: PlayCircleIcon },
-  { name: "Contact sales", href: "#", icon: PhoneIcon },
+  { name: "Watch demo", href: "/", icon: PlayCircleIcon },
+  { name: "Contact sales", href: "/", icon: PhoneIcon },
 ];
 
 const navigation = {
@@ -327,7 +327,7 @@ const navigation = {
       featured: [
         {
           name: "New Arrivals",
-          href: "#",
+          href: "/",
           imageSrc:
             "https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-01.jpg",
           imageAlt:
@@ -335,7 +335,7 @@ const navigation = {
         },
         {
           name: "Basic Tees",
-          href: "#",
+          href: "/",
           imageSrc:
             "https://tailwindcss.com/plus-assets/img/ecommerce-images/mega-menu-category-02.jpg",
           imageAlt:
@@ -347,35 +347,35 @@ const navigation = {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Dresses", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Denim", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
+            { name: "Tops", href: "/" },
+            { name: "Dresses", href: "/" },
+            { name: "Pants", href: "/" },
+            { name: "Denim", href: "/" },
+            { name: "Sweaters", href: "/" },
+            { name: "T-Shirts", href: "/" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
-            { name: "Hats", href: "#" },
-            { name: "Belts", href: "#" },
+            { name: "Watches", href: "/" },
+            { name: "Wallets", href: "/" },
+            { name: "Bags", href: "/" },
+            { name: "Sunglasses", href: "/" },
+            { name: "Hats", href: "/" },
+            { name: "Belts", href: "/" },
           ],
         },
         {
           id: "brands",
           name: "Brands",
           items: [
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Significant Other", href: "#" },
+            { name: "Full Nelson", href: "/" },
+            { name: "My Way", href: "/" },
+            { name: "Re-Arranged", href: "/" },
+            { name: "Counterfeit", href: "/" },
+            { name: "Significant Other", href: "/" },
           ],
         },
       ],
@@ -386,7 +386,7 @@ const navigation = {
       featured: [
         {
           name: "New Arrivals",
-          href: "#",
+          href: "/",
           imageSrc:
             "https://tailwindcss.com/plus-assets/img/ecommerce-images/product-page-04-detail-product-shot-01.jpg",
           imageAlt:
@@ -394,7 +394,7 @@ const navigation = {
         },
         {
           name: "Artwork Tees",
-          href: "#",
+          href: "/",
           imageSrc:
             "https://tailwindcss.com/plus-assets/img/ecommerce-images/category-page-02-image-card-06.jpg",
           imageAlt:
@@ -406,31 +406,31 @@ const navigation = {
           id: "clothing",
           name: "Clothing",
           items: [
-            { name: "Tops", href: "#" },
-            { name: "Pants", href: "#" },
-            { name: "Sweaters", href: "#" },
-            { name: "T-Shirts", href: "#" },
-            { name: "Jackets", href: "#" },
+            { name: "Tops", href: "/" },
+            { name: "Pants", href: "/" },
+            { name: "Sweaters", href: "/" },
+            { name: "T-Shirts", href: "/" },
+            { name: "Jackets", href: "/" },
           ],
         },
         {
           id: "accessories",
           name: "Accessories",
           items: [
-            { name: "Watches", href: "#" },
-            { name: "Wallets", href: "#" },
-            { name: "Bags", href: "#" },
-            { name: "Sunglasses", href: "#" },
+            { name: "Watches", href: "/" },
+            { name: "Wallets", href: "/" },
+            { name: "Bags", href: "/" },
+            { name: "Sunglasses", href: "/" },
           ],
         },
         {
           id: "brands",
           name: "Brands",
           items: [
-            { name: "Re-Arranged", href: "#" },
-            { name: "Counterfeit", href: "#" },
-            { name: "Full Nelson", href: "#" },
-            { name: "My Way", href: "#" },
+            { name: "Re-Arranged", href: "/" },
+            { name: "Counterfeit", href: "/" },
+            { name: "Full Nelson", href: "/" },
+            { name: "My Way", href: "/" },
           ],
         },
       ],
@@ -438,7 +438,7 @@ const navigation = {
   ],
   pages: [
     { name: "About", href: "/about" },
-    { name: "Stores", href: "#" },
+    { name: "Stores", href: "/" },
   ],
 };
 

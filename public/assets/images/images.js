@@ -52,6 +52,7 @@ const Images = {
   visaIcon: new URL("./visa.svg", import.meta.url).href,
   discoverIcon: new URL("./discover.svg", import.meta.url).href,
   mastercardIcon: new URL("./mastercard.svg", import.meta.url).href,
+  allCatugBg: new URL("./catug/all-bg.svg", import.meta.url).href,
 };
 
 export default Images;
